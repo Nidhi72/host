@@ -1014,7 +1014,40 @@ ul.list li i {
 .it-banner {
   background-image: url(../images/it-banner.jpeg);
 }
+.garware-banner {
+  background-image: url(../images/Garware/Woven-Geotextile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 100px 0;
+  color: #ffffff;
+  height: 340px;
 
+}
+
+.garware-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.garware-banner > * {
+  position: relative;
+  z-index: 2;
+}
+
+.garware-banner h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
 .header-content {
   text-align: center;
 }
